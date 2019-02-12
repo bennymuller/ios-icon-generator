@@ -159,34 +159,24 @@ fi
 # 
 # name size
 sizes_mapper=`cat << EOF
-Icon-16         16
-Icon-16@2x      32
-Icon-32         32
-Icon-32@2x      64
-Icon-128        128
-Icon-128@2x     256
-Icon-256        256
-Icon-256@2x     256
-Icon-512        512
-Icon-512@2x     1024
-Icon-20@2x      40
-Icon-20@3x      60
-Icon-29@2x      58
-Icon-29@3x      87
-Icon-40@2x      80
-Icon-40@3x      120
-Icon-60@2x      120
-Icon-60@3x      180
-Icon-76@2x      152
-Icon-83.5@2x    167
-Icon-1024       1024
-Icon-24@2x      48
-Icon-27.5@2x    55
-Icon-86@2x      172
-Icon-98@2x      196
-Icon-108@2x     216
-Icon-44@2x      88
-Icon-50@2x      100
+IPhoneIcon20@2x      40
+IPhoneIcon20@3x      60
+IPhoneIcon29@2x      58
+IPhoneIcon29@3x      87
+IPhoneIcon40@2x      80
+IPhoneIcon40@3x      120
+IPhoneIcon60@2x      120
+IPhoneIcon60@3x      180
+IPadIcon20         20
+IPadIcon20@2x      40
+IPadIcon29         29
+IPadIcon29@2x      58
+IPadIcon40         40
+IPadIcon40@2x      80
+IPadIcon76         76
+IPadIcon76@2x      152
+IPadIcon83.5@2x    167
+Icon1024      1024
 EOF`
 
 OLD_IFS=$IFS
@@ -208,4 +198,3 @@ done
 info "Congratulation. All icons for iOS/macOS/watchOS APP are generate to the directory: $dst_path."
 
 IFS=$OLD_IFS
-
