@@ -195,6 +195,8 @@ do
     fi
 done
 
+zip -r $dst_path{.zip,}
+
 info "Congratulation. All icons for iOS/macOS/watchOS APP are generate to the directory: $dst_path."
 
 IFS=$OLD_IFS
